@@ -1,0 +1,151 @@
+﻿c=input('一秒知道你的生肖星座(0:立即開始 1:拒絕)?');
+if c==0    
+     while c==0 
+         A=input('請輸入你的生日，民國幾年？');
+         B=input('月?');
+         C=input('日?');
+        if B>12 
+            fprintf('你別鬧了好嗎\n');
+        elseif C>31
+            fprintf('你別鬧了好嗎\n');
+        else
+           A2=mod(A,12);      
+             switch A2
+       
+                case {0}
+                    a1=('豬/亥');
+         
+                case {1}
+                    a1=('鼠/子');
+        
+                case {2}
+                    a1=('牛/丑');
+     
+                case {3}
+                    a1=('虎/寅');
+   
+                case {4}
+                    a1=('兔/卯');
+  
+                case {5}
+                    a1=('龍/辰');
+   
+                case {6}
+                    a1=('蛇/巳');
+       
+                case {7}
+                    a1=('馬/午');
+        
+                case {8}
+                    a1=('羊/未');
+        
+                case {9}
+                    a1=('猴/申');
+        
+                case {10}
+                    a1=('雞/酉');
+        
+                case {11}
+                    a1=('狗/戌');
+            
+             end
+           B0=mod(A-12,10);      
+             switch B0
+       
+                case {0}
+                    b0=('癸\n');
+        
+                case {1}
+                    b0=('甲\n');
+     
+                case {2}
+                    b0=('乙\n');
+   
+                case {3}
+                    b0=('丙\n');
+  
+                case {4}
+                    b0=('丁\n');
+   
+                case {5}
+                    b0=('戊\n');
+       
+                case {6}
+                    b0=('己\n');
+        
+                case {7}
+                    b0=('庚\n');
+        
+                case {8}
+                    b0=('辛\n');
+        
+                case {9}
+                    b0=('壬\n');
+            
+             end
+                   
+                    if C<=22
+                       B=B-1;
+                    elseif B==0
+                       B=12;
+                    end
+             
+             switch B
+       
+                case {1}
+                    b1=('水瓶座\n');
+         
+                case {2}
+                    b1=('雙魚座\n');
+        
+                case {3}
+                    b1=('牡羊座\n');
+     
+                case {4}
+                    b1=('金牛座\n');
+   
+                case {5}
+                    b1=('雙子座\n');
+  
+                case {6}
+                    b1=('巨蟹座\n');
+   
+                case {7}
+                    b1=('獅子座\n');
+       
+                case {8}
+                    b1=('處女座\n');
+        
+                case {9}
+                    b1=('天枰座\n');
+        
+                case {10}
+                    b1=('天蠍座\n');
+        
+                case {11}
+                    b1=('射手座\n');
+        
+                case {12}
+                    b1=('摩羯座\n');
+            
+             end
+        disp('這是您的生肖&天干地支:');
+        fprintf(a1);
+        fprintf(b0);        
+        disp('星座:');
+        fprintf(b1);   
+        end
+        c=input('(0:重新開始 1:結束?)');
+           if c==1
+              fprintf('謝謝您的使用');
+           else
+              fprintf('你別鬧了好嗎');
+           end 
+     end
+     
+elseif  c==1  
+            fprintf ('你竟然拒絕我' );  
+     
+else   
+            fprintf('你別鬧了好嗎');
+end
